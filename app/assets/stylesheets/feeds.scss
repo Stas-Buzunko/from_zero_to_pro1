@@ -1,0 +1,100 @@
+// Place all the styles related to the Feeds controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+    background-color: #3498db;
+    .wrapper {
+    text-align: center;
+    .submit {
+  background: #05fc47;
+  background-image: -webkit-linear-gradient(top, #05fc47, #0ba129);
+  background-image: -moz-linear-gradient(top, #05fc47, #0ba129);
+  background-image: -ms-linear-gradient(top, #05fc47, #0ba129);
+  background-image: -o-linear-gradient(top, #05fc47, #0ba129);
+  background-image: linear-gradient(to bottom, #05fc47, #0ba129);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #fafafa;
+  font-size: 60px;
+  padding: 20px 40px 20px 40px;
+  text-decoration: none;
+}
+
+.submit:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+  }
+
+
+.senior {
+    
+
+  }
+  .junior{
+  p {
+    color:green; text-align: center;
+    }
+  }
+}
+
+h1 {
+    color: white; text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.today {
+  position: absolute;
+    top: 0px;
+    left: 50px;
+}
+
+.progress { 
+  height: 20px;  /* Can be anything */
+  position: relative;
+  background: #555;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+.progress > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(43,194,83);
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43,194,83) 37%,
+    rgb(84,240,84) 69%
+  );
+  box-shadow: 
+    inset 0 2px 9px  rgba(255,255,255,0.3),
+    inset 0 -2px 6px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+
+  .orange > span {
+  background-color: #f1a165;
+  background-image: linear-gradient(to bottom, #f1a165, #f36d0a);
+  }
+
+.red > span {
+  background-color: #f0a3a3;
+  background-image: linear-gradient(to bottom, #f0a3a3, #f42323);
+}
+}

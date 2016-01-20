@@ -1,0 +1,28 @@
+<div class="today">
+  <h2> Today's total Feed: <%= @today %> min</h2>
+  <h2> Left: <%= 420 - @today %> min</h2>
+</div>
+<br><br><br><br>
+<div class="milestone">
+  <h1>Hours left to Junior Milestone: <%= @hours_left_to_junior %> </h1>
+</div>
+
+<div class="junior"><h2> You will become a Junior on:<p><%= @estimated_junior_milestone %></p> </h2><br><br>
+</div>
+
+<div class="wrapper">
+<%= form_for @feed, url: {action: :update} do |t| %>
+  <%= t.submit "#{@feed.start ? 'Stop Feed' : 'Start Feed'}", class: "submit" %>
+  <% end %>
+
+<div class="senior"><br> <h2>Senior on:<p><%= @estimated_senior_milestone %></p>
+</h2>
+</div>
+
+<div class="progress">
+  <span style="width: <%= @percentage %>%"><strong><%= @percentage %>%</strong></span>
+
+</div>
+
+
+</div>
