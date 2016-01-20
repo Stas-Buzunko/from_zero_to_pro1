@@ -1,5 +1,5 @@
 class FeedsController < ApplicationController
- #http_basic_authenticate_with name: "bon", password: "bon", except: [:index]
+  http_basic_authenticate_with name: "bon", password: "bon", except: [:index]
   BIG_BANG = DateTime.new(2016, 1, 1, 0, 0, 0)
   
   def index
